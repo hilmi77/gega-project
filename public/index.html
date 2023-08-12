@@ -33,9 +33,23 @@
       rel="stylesheet"
     />
   </head>
-  <body class="font-open">
+  <body class="font-open dark">
+    <!--Dark/light Toggle-->
+    <div class="absolute top-1 left-5 cursor-pointer text-lg">
+      <i
+        class="fa-solid fa-sun text-white"
+        id="sun"
+      ></i>
+      <i
+        class="fa-solid fa-moon text-black hidden"
+        id="moon"
+      ></i>
+    </div>
+
     <!--Header Section-->
-    <header class="bg-black py-6 lg:py-12 text-gega-grey uppercase">
+    <header
+      class="dark:bg-black bg-white py-6 lg:py-12 dark:text-gega-grey text-black uppercase"
+    >
       <!--Header Container-->
       <div
         class="container flex items-center justify-between space-x-8 lg:space-x-16"
@@ -195,7 +209,7 @@
     </section>
 
     <!--Movies Section-->
-    <section class="py-24 bg-black">
+    <section class="py-24 dark:bg-black bg-white dark:text-white text-black">
       <!--Movies Content-->
       <div
         class="container flex flex-col lg:flex-row lg:space-x-16 space-y-8 lg:space-y-0"
@@ -533,7 +547,11 @@
         <!-- Right Content-->
         <div class="basis-1/3 pl-10 lg:pl-0">
           <!--Title-->
-          <h2 class="text-gega-grey mb-8">Hot News</h2>
+          <h2
+            class="dark:text-gega-grey text-black mb-8 dark:bg-black bg-white"
+          >
+            Hot News
+          </h2>
           <!--News Container-->
           <div
             class="flex flex-row lg:flex-col lg:h-full lg:pb-16 justify-start lg:justify-between flex-wrap lg:flex-nowrap space-y-4"
@@ -652,7 +670,7 @@
     </section>
 
     <!--Matrix Section-->
-    <section class="bg-gega-white mb-24">
+    <section class="bg-gega-white">
       <!--Matrix Section Container-->
       <div
         class="container flex items-center justify-center relative pl-10 lg:pl-0"
@@ -693,5 +711,249 @@
         </div>
       </div>
     </section>
+
+    <!--Post Section-->
+    <section
+      class="py-24 dark:bg-black bg-white dark:text-gega-grey text-black"
+    >
+      <!--Container-->
+      <div class="container px-10 lg:px-0">
+        <!--Title-->
+        <h2 class="text-gega-red"><a href="#">Popular posts</a></h2>
+        <!--Grid Area-->
+        <div class="grid grid-cols-6 gap-10">
+          <!--Item 1-->
+          <div class="col-span-6 md:col-span-3 border border-gega-red">
+            <!--Item1 Header-->
+            <div
+              class="border-b border-gega-red p-4 flex items-center justify-between"
+            >
+              <h3>Zeliha KALE</h3>
+              <img
+                src="./images/userava1.jpg"
+                alt=""
+                class="rounded-full"
+              />
+            </div>
+            <!--Item 1 Para-->
+            <p class="p-4 text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+              eum nemo perferendis dolor incidunt quas.
+            </p>
+            <!--Item 1 Footer -->
+            <div
+              class="border-t border-gega-red p-4 flex items-center justify-end space-x-4 font-bold font-gemunu text-xs"
+            >
+              <p>ON DEC 17, 2022</p>
+              <div class="flex items-center justify-center space-x-1">
+                <i class="fa-regular fa-comment"></i>
+                <p>12</p>
+                <i class="fa-regular fa-heart"></i>
+                <p>09</p>
+              </div>
+            </div>
+          </div>
+
+          <!--Item 2-->
+          <div class="col-span-6 md:col-span-3 border border-gega-red">
+            <!--Item1 Header-->
+            <div
+              class="border-b border-gega-red p-4 flex items-center justify-between"
+            >
+              <h3>Hilmi KALE</h3>
+              <img
+                src="./images/userava2.jpg"
+                alt=""
+                class="rounded-full"
+              />
+            </div>
+            <!--Item 1 Para-->
+            <p class="p-4 text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+              eum nemo perferendis dolor incidunt quas.
+            </p>
+            <!--Item 1 Footer -->
+            <div
+              class="border-t border-gega-red p-4 flex items-center justify-end space-x-4 font-bold font-gemunu text-xs"
+            >
+              <p>ON DEC 17, 2022</p>
+              <div class="flex items-center justify-center space-x-1">
+                <i class="fa-regular fa-comment"></i>
+                <p>12</p>
+                <i class="fa-regular fa-heart"></i>
+                <p>09</p>
+              </div>
+            </div>
+          </div>
+
+          <!--Item 3-->
+          <div
+            class="col-span-6 md:col-span-3 lg:col-span-2 border border-gega-red"
+          >
+            <!--Item1 Header-->
+            <div
+              class="border-b border-gega-red p-4 flex items-center justify-between"
+            >
+              <h3>Buğra Enes KALE</h3>
+              <img
+                src="./images/userava3.jpg"
+                alt=""
+                class="rounded-full"
+              />
+            </div>
+            <!--Item 1 Para-->
+            <p class="p-4 text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+              eum nemo perferendis dolor incidunt quas.
+            </p>
+            <!--Item 1 Footer -->
+            <div
+              class="border-t border-gega-red p-4 flex items-center justify-end space-x-4 font-bold font-gemunu text-xs"
+            >
+              <p>ON DEC 17, 2022</p>
+              <div class="flex items-center justify-center space-x-1">
+                <i class="fa-regular fa-comment"></i>
+                <p>12</p>
+                <i class="fa-regular fa-heart"></i>
+                <p>09</p>
+              </div>
+            </div>
+          </div>
+
+          <!--Item 4-->
+          <div
+            class="col-span-6 md:col-span-3 lg:col-span-2 border border-gega-red"
+          >
+            <!--Item1 Header-->
+            <div
+              class="border-b border-gega-red p-4 flex items-center justify-between"
+            >
+              <h3>Zübeyde KALE</h3>
+              <img
+                src="./images/userava4.jpg"
+                alt=""
+                class="rounded-full"
+              />
+            </div>
+            <!--Item 1 Para-->
+            <p class="p-4 text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+              eum nemo perferendis dolor incidunt quas.
+            </p>
+            <!--Item 1 Footer -->
+            <div
+              class="border-t border-gega-red p-4 flex items-center justify-end space-x-4 font-bold font-gemunu text-xs"
+            >
+              <p>ON DEC 17, 2022</p>
+              <div class="flex items-center justify-center space-x-1">
+                <i class="fa-regular fa-comment"></i>
+                <p>12</p>
+                <i class="fa-regular fa-heart"></i>
+                <p>09</p>
+              </div>
+            </div>
+          </div>
+
+          <!--Item 5-->
+          <div class="hidden lg:block lg:col-span-2 border border-gega-red">
+            <!--Item1 Header-->
+            <div
+              class="border-b border-gega-red p-4 flex items-center justify-between"
+            >
+              <h3>Mustafa KALE</h3>
+              <img
+                src="./images/userava5.jpg"
+                alt=""
+                class="rounded-full"
+              />
+            </div>
+            <!--Item 1 Para-->
+            <p class="p-4 text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+              eum nemo perferendis dolor incidunt quas.
+            </p>
+            <!--Item 1 Footer -->
+            <div
+              class="border-t border-gega-red p-4 flex items-center justify-end space-x-4 font-bold font-gemunu text-xs"
+            >
+              <p>ON DEC 17, 2022</p>
+              <div class="flex items-center justify-center space-x-1">
+                <i class="fa-regular fa-comment"></i>
+                <p>12</p>
+                <i class="fa-regular fa-heart"></i>
+                <p>09</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer Section-->
+    <footer class="dark:bg-black bg-white dark:text-gega-grey text-black">
+      <!--Footer Container-->
+      <div class="container flex flex-col md:flex-row px-10 lg:px-0 pb-8">
+        <!--Left-->
+        <div class="basis-1/3">
+          <a
+            href="#"
+            class="text-2xl lg:text-3xl font-bold text-transparent bg-gradient-to-r bg-clip-text from-gega-red to-gega-grey"
+            >GEGA</a
+          >
+          <p class="text-sm mt-2">2022 ArinSOFT No &copy; COPYRIGHT</p>
+        </div>
+        <!--Middle-->
+        <div class="basis-1/3">
+          <h2 class="mb-2 text-gega-red">LINKS</h2>
+          <div class="grid grid-cols-5 gap-2 uppercase">
+            <a
+              class="col-span-2 hover:text-gega-melon duration-500"
+              href="#"
+              >Movies</a
+            >
+            <a
+              class="col-span-2 hover:text-gega-melon duration-500"
+              href="#"
+              >Celebrities</a
+            >
+            <a
+              class="col-span-2 hover:text-gega-melon duration-500"
+              href="#"
+              >Blog</a
+            >
+            <a
+              class="col-span-2 hover:text-gega-melon duration-500"
+              href="#"
+              >News</a
+            >
+            <a
+              class="col-span-2 hover:text-gega-melon duration-500"
+              href="#"
+              >Abput</a
+            >
+          </div>
+        </div>
+        <!--Right-->
+        <div class="basis-1/3">
+          <h2 class="mb-2 text-gega-red">FOLLOW US</h2>
+          <form
+            action=""
+            class="flex"
+          >
+            <input
+              class="py-1 px-2 bg-transparent border border-gega-red placeholder:text-xs outline-none"
+              placeholder="TYPE YOUR EMAIL"
+              type="text"
+            />
+            <button
+              class="py-1 px-2 bg-transparent border border-gega-red bg-gega-red font-gemunu uppercase"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/app.js"></script>
   </body>
 </html>
